@@ -11,7 +11,7 @@
         android:id="@+id/message"
         android:layout_width="106dp"
         android:layout_height="58dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="128dp"
         android:layout_marginTop="176dp"
         android:fontFamily="sans-serif"
         android:text="Hello,"
