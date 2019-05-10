@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.navigation_social:
+                    mTextMessage.setText("Social");
                     return true;
                 case R.id.navigation_schoolloop:
                     mTextMessage.setText("Schoolloop");
