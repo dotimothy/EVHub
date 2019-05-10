@@ -6,10 +6,8 @@
     android:background="#FFFFFF">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         app:srcCompat="@drawable/ic_launcher" />
-
 </RelativeLayout>
