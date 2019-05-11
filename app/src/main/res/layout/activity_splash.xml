@@ -7,7 +7,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="600dp"
+        android:layout_height="5000dp"
+        android:paddingTop="250dp"
+        android:paddingBottom="250dp"
         app:srcCompat="@drawable/ic_launcher" />
 </RelativeLayout>
