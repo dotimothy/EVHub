@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment3).commit();
-        fm.beginTransaction().add(R.id.main_container, fragment3, "3").hide(fragment3).commit();
-        fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();
-        fm.beginTransaction().add(R.id.main_container, fragment1, "1").commit();
+        fm.beginTransaction().add(R.id.container, fragment4, "4").hide(fragment3).commit();
+        fm.beginTransaction().add(R.id.container, fragment3, "3").hide(fragment3).commit();
+        fm.beginTransaction().add(R.id.container, fragment2, "2").hide(fragment2).commit();
+        fm.beginTransaction().add(R.id.container, fragment1, "1").commit();
     }
 
 }
