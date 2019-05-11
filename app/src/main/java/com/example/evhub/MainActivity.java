@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     fm.beginTransaction().hide(active).show(fragment1).commit();
                     active = fragment1;
-                    mTextMessage.setText("Hello, Joe");
-                    return true;
-                case R.id.navigation_schoolloop:
-                    mTextMessage.setText("Schoolloop");
                     return true;
                 case R.id.navigation_social:
                     fm.beginTransaction().hide(active).show(fragment2).commit();
