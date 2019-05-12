@@ -7,10 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Belal on 1/23/2018.
- */
-
 public class Notifications extends Fragment {
     @Nullable
     @Override

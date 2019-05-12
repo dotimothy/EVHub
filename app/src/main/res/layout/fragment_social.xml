@@ -5,10 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".Social">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ripple"
+        android:elevation="50dp"
+        android:onClick="form"
+        android:text="@string/google_form"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
 
 </FrameLayout>
