@@ -11,5 +11,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="form"
-        android:text="Google Form" />
+        android:text="@string/google_form" />
 </FrameLayout>

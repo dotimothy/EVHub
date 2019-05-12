@@ -14,7 +14,7 @@ public class Social extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_social, null);
-        Button b = (Button)v.findViewById(R.id.button);
+        Button b = (Button) v.findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
