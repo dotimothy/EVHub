@@ -9,10 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * Created by Belal on 1/23/2018.
- */
-
 public class Social extends Fragment {
     @Nullable
     @Override
