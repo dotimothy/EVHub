@@ -25,7 +25,7 @@ public class Schoolloop extends Fragment {
         View v = inflater.inflate(R.layout.fragment_schoolloop, null);
         WebView browser = (WebView) v.findViewById(R.id.webview);
         browser.setWebViewClient(new WebViewClient()); //essential for opening websites in webview.
-        browser.loadUrl("https://evhs.schoolloop.com/portal/login");
+        browser.loadUrl("https://evhs.schoolloop.com/portal/login"); //loading url for EVHS 
         if(browser.canGoBack()) {
             browser.goBack();
         }
