@@ -21,6 +21,6 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="bottom"
         android:text="You're All Set!"
-        android:
+        android:textSize="40dp"
         android:textColorHighlight="#000000"/>
 </RelativeLayout>
