@@ -69,7 +69,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 })
                 .setNegativeButton("No", null)
                 .show();
-
-
     }
 }
