@@ -23,6 +23,8 @@ public class Social extends Fragment {
                 fr.commit();
             }
         });
+        b.setX(0);
+        b.setY(200);
         return v;
     }
 }
