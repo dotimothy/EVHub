@@ -43,7 +43,8 @@ public class Schoolloop extends Fragment {
         settings.setJavaScriptEnabled(true);
         browser.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         browser.getSettings().setBuiltInZoomControls(false);
-        browser.setWebViewClient(new WebViewClient()); //essential for opening websites in webview.
+        browser.setWebViewClient(new WebViewClient());
+        browser.getSettings().setAppCacheEnabled(true);
         browser.loadUrl("https://evhs.schoolloop.com/portal/login");
         browser.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent,
