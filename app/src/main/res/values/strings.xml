@@ -4,8 +4,12 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_schoolloop">Notifications</string>
     <string name="title_notifications">Notifications</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="google_form">Google Form</string>
+    <string name="schedule1">Regular Day Schedule</string>
+    <string name="schedule2">Minimum Day Schedule</string>
+    <string name="schedule3">Liaison Day Schedule</string>
+    <string name="schedule4">PD Schedule</string>
+    <string name="schedule5">PExtended Lunch Schedule</string>
+    <string name="title_schedule">EVHS Schedules</string>
 </resources>
