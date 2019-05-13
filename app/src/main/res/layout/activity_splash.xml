@@ -12,4 +12,5 @@
         android:paddingTop="250dp"
         android:paddingBottom="250dp"
         app:srcCompat="@drawable/ic_launcher" />
+
 </RelativeLayout>
