@@ -1,7 +1,9 @@
 package com.example.evhub;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -15,10 +17,9 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, MainActivity.class);
-                startActivity(i);
+                startActivity(new Intent(Splash.this, MainActivity.class));
                 finish();
             }
-        }, 750);
+        }, 1500);
     }
 }

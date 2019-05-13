@@ -11,16 +11,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-/**
- * Created by Belal on 1/23/2018.
- */
+public class Form extends Social {
 
-public class Form extends Fragment {
-
-    @Nullable
     @Override
-
-
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_form, null);
         WebView browser = (WebView) v.findViewById(R.id.form); //creating webview
