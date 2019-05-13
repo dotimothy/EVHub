@@ -17,7 +17,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Schoolloop extends Fragment {
+public class
+Schoolloop extends Fragment {
     private WebView browser;
     private View v;
     private Handler handler = new Handler() {
