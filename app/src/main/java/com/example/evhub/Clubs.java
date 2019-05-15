@@ -48,7 +48,7 @@ public class Clubs extends Fragment {
         browser.getSettings().setBuiltInZoomControls(false);
         browser.setWebViewClient(new WebViewClient());
         browser.getSettings().setAppCacheEnabled(true);
-        browser.loadUrl("https://evhs.schoolloop.com/evcourses");
+        browser.loadUrl("https://docs.google.com/spreadsheets/d/e/2PACX-1vRYD8uolgmMZPVdNtYWP5howWW7jMh6M-a-r_c4-1yPNSNSkEEYCdJ8wKjCNgeJYe1XH6Y4MjB-pNOq/pubhtml");
         browser.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent,
                                         String contentDisposition, String mimetype,

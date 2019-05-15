@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.navigation_schoolloop:
-                fragment = new Schoolloop();
+                fragment = new Clubs
+                        ();
                 break;
 
             case R.id.navigation_notifications:
