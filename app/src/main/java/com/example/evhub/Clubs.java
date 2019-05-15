@@ -1,5 +1,6 @@
 package com.example.evhub;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Classes extends Fragment {
+public class Clubs extends Fragment {
     private WebView browser;
     private View v;
     private Handler handler = new Handler() {
@@ -31,13 +32,15 @@ public class Classes extends Fragment {
             }
         }
     };
-    private void webViewGoBack(){
+
+    private void webViewGoBack() {
         browser.goBack();
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_classes, null);
-        browser = (WebView) v.findViewById(R.id.classView);
+        v = inflater.inflate(R.layout.fragment_clubs, null);
+        browser = (WebView) v.findViewById(R.id.clubview);
         WebSettings settings = browser.getSettings();
         settings.setSupportZoom(false);
         settings.setJavaScriptEnabled(true);
@@ -55,7 +58,7 @@ public class Classes extends Fragment {
                 startActivity(i);
             }
         });
-        browser.setOnKeyListener(new View.OnKeyListener(){
+        browser.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode == KeyEvent.KEYCODE_BACK
                         && event.getAction() == MotionEvent.ACTION_UP
@@ -69,5 +72,3 @@ public class Classes extends Fragment {
         return v;
     }
 }
-
-
