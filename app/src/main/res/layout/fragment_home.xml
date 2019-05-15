@@ -6,18 +6,5 @@
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <Button
-        android:id="@+id/scheduleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Schedules" />
-
-    <Button
-        android:id="@+id/mapButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Map" />
-
+    
 </FrameLayout>

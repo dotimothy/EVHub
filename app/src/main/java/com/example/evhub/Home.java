@@ -14,22 +14,6 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, null);
-        Button b = (Button) v.findViewById(R.id.scheduleButton);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new Schedule());
-                fr.commit();
-            }
-        });
-        Button b1 = (Button) v.findViewById(R.id.mapButton);
-        b1.setOnClickListener(new View.OnClickListener() {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new Map());
-                fr.commit();
-            }
-        });
         return v;
     }
 }
