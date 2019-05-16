@@ -17,6 +17,8 @@ public class Home extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, null);
         CardView c = (CardView) v.findViewById(R.id.schedule);
         CardView c1 = (CardView) v.findViewById(R.id.classes);
+        CardView c2 = (CardView) v.findViewById(R.id.map);
+        CardView c3 = (CardView) v.findViewById(R.id.clubs);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +32,22 @@ public class Home extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new Classes());
+                fr.commit();
+            }
+        });
+        c2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container, new Map());
+                fr.commit();
+            }
+        });
+        c3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container, new Clubs());
                 fr.commit();
             }
         });
