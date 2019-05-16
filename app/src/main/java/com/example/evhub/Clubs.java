@@ -1,5 +1,6 @@
 package com.example.evhub;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Schoolloop extends Fragment {
+public class Clubs extends Fragment {
     private WebView browser;
     private View v;
     private Handler handler = new Handler() {
@@ -31,13 +32,15 @@ public class Schoolloop extends Fragment {
             }
         }
     };
-    private void webViewGoBack(){
+
+    private void webViewGoBack() {
         browser.goBack();
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_schoolloop, null);
-        browser = (WebView) v.findViewById(R.id.webView);
+        v = inflater.inflate(R.layout.fragment_clubs, null);
+        browser = (WebView) v.findViewById(R.id.clubview);
         WebSettings settings = browser.getSettings();
         settings.setSupportZoom(false);
         settings.setJavaScriptEnabled(true);
@@ -45,7 +48,7 @@ public class Schoolloop extends Fragment {
         browser.getSettings().setBuiltInZoomControls(false);
         browser.setWebViewClient(new WebViewClient());
         browser.getSettings().setAppCacheEnabled(true);
-        browser.loadUrl("https://evhs.schoolloop.com/portal/login");
+        browser.loadUrl("https://docs.google.com/spreadsheets/d/e/2PACX-1vRYD8uolgmMZPVdNtYWP5howWW7jMh6M-a-r_c4-1yPNSNSkEEYCdJ8wKjCNgeJYe1XH6Y4MjB-pNOq/pubhtml");
         browser.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent,
                                         String contentDisposition, String mimetype,
@@ -55,7 +58,7 @@ public class Schoolloop extends Fragment {
                 startActivity(i);
             }
         });
-        browser.setOnKeyListener(new View.OnKeyListener(){
+        browser.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode == KeyEvent.KEYCODE_BACK
                         && event.getAction() == MotionEvent.ACTION_UP

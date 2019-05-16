@@ -1,5 +1,6 @@
 package com.example.evhub;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Schoolloop extends Fragment {
+public class Calender extends Fragment {
     private WebView browser;
     private View v;
     private Handler handler = new Handler() {
@@ -36,8 +37,8 @@ public class Schoolloop extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_schoolloop, null);
-        browser = (WebView) v.findViewById(R.id.webView);
+        v = inflater.inflate(R.layout.fragment_calender, null);
+        browser = (WebView) v.findViewById(R.id.calenderview);
         WebSettings settings = browser.getSettings();
         settings.setSupportZoom(false);
         settings.setJavaScriptEnabled(true);
@@ -45,7 +46,7 @@ public class Schoolloop extends Fragment {
         browser.getSettings().setBuiltInZoomControls(false);
         browser.setWebViewClient(new WebViewClient());
         browser.getSettings().setAppCacheEnabled(true);
-        browser.loadUrl("https://evhs.schoolloop.com/portal/login");
+        browser.loadUrl("https://calendar.google.com/calendar/embed?src=esuhsd.org_4g55nhkhql1fun7kfnb4c3ltqg%40group.calendar.google.com&ctz=America%2FLos_Angeles");
         browser.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent,
                                         String contentDisposition, String mimetype,

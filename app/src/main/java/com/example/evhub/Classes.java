@@ -17,7 +17,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Schoolloop extends Fragment {
+public class Classes extends Fragment {
     private WebView browser;
     private View v;
     private Handler handler = new Handler() {
@@ -36,8 +36,8 @@ public class Schoolloop extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_schoolloop, null);
-        browser = (WebView) v.findViewById(R.id.webView);
+        v = inflater.inflate(R.layout.fragment_classes, null);
+        browser = (WebView) v.findViewById(R.id.classView);
         WebSettings settings = browser.getSettings();
         settings.setSupportZoom(false);
         settings.setJavaScriptEnabled(true);
@@ -45,7 +45,7 @@ public class Schoolloop extends Fragment {
         browser.getSettings().setBuiltInZoomControls(false);
         browser.setWebViewClient(new WebViewClient());
         browser.getSettings().setAppCacheEnabled(true);
-        browser.loadUrl("https://evhs.schoolloop.com/portal/login");
+        browser.loadUrl("https://evhs.schoolloop.com/evcourses");
         browser.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent,
                                         String contentDisposition, String mimetype,
@@ -69,3 +69,5 @@ public class Schoolloop extends Fragment {
         return v;
     }
 }
+
+
