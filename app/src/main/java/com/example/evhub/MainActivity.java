@@ -1,10 +1,12 @@
 package com.example.evhub;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -45,11 +47,24 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
+                    .addToBackStack(null)
                     .replace(R.id.fragment_container, fragment)
                     .commit();
             return true;
         }
         return false;
+    }
+    
+    @Override
+    public void onBackPressed(){
+        FragmentManager fm = getFragmentManager();
+        if (fm.getBackStackEntryCount() > 0) {
+            Log.i("MainActivity", "popping backstack");
+            fm.popBackStack();
+        } else {
+            Log.i("MainActivity", "nothing on backstack, calling super");
+            super.onBackPressed();
+        }
     }
 
 }
