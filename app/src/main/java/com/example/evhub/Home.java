@@ -16,7 +16,7 @@ public class Home extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, null);
         CardView c = (CardView) v.findViewById(R.id.schedule);
         CardView c1 = (CardView) v.findViewById(R.id.classes);
-        CardView c2 = (CardView) v.findViewById(R.id.map);
+        CardView c2 = (CardView) v.findViewById(R.id.Calender);
         CardView c3 = (CardView) v.findViewById(R.id.clubs);
         CardView c4 = (CardView) v.findViewById(R.id.graduation);
         CardView c5 = (CardView) v.findViewById(R.id.numbers);
@@ -40,7 +40,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new Map());
+                fr.replace(R.id.fragment_container, new Calender());
                 fr.commit();
             }
         });
