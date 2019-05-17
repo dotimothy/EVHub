@@ -18,6 +18,8 @@ public class Home extends Fragment {
         CardView c1 = (CardView) v.findViewById(R.id.classes);
         CardView c2 = (CardView) v.findViewById(R.id.map);
         CardView c3 = (CardView) v.findViewById(R.id.clubs);
+        CardView c4 = (CardView) v.findViewById(R.id.graduation);
+        CardView c5 = (CardView) v.findViewById(R.id.numbers);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +49,22 @@ public class Home extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new Clubs());
+                fr.commit();
+            }
+        });
+        c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container, new Graduation());
+                fr.commit();
+            }
+        });
+        c5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container, new Numbers());
                 fr.commit();
             }
         });
