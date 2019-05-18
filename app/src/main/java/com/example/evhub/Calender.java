@@ -18,6 +18,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+/**
+ * Fragment which implements the Calender feature for the app.
+ */
 public class Calender extends Fragment {
     private WebView browser;
     private View v;
@@ -32,10 +35,23 @@ public class Calender extends Fragment {
             }
         }
     };
+
+    /**
+     * Method which makes the browser go back from the calender website
+     */
     private void webViewGoBack(){
         browser.goBack();
     }
+
     @Override
+
+    /**
+     * Method which creates the view by linking the calender xml file
+     * @param inflater the LayoutInflater which inflates the view to the app
+     * @param container the ViewGroup which displays the current fragment
+     * @oaram savedInstanceState the Bundle which groips the fragments together
+     * @return the view of the calender fragment
+     */
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_calender, null);
         browser = (WebView) v.findViewById(R.id.calenderview);

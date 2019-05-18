@@ -9,9 +9,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * Method which creates the home fragment for the app
+ */
 public class Home extends Fragment {
     @Nullable
     @Override
+    /**
+     * Method which creates the home view along with the linkable buttons
+     * @param inflater the LayoutInflater which inflates the view to the app
+     * @param container the ViewGroup which displays the current fragment
+     * @oaram savedInstanceState the Bundle which groips the fragments together
+     * @return the view of the clubs fragment
+     */
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, null);
         CardView c = v.findViewById(R.id.schedule);
@@ -22,6 +32,10 @@ public class Home extends Fragment {
         CardView c5 = v.findViewById(R.id.numbers);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to schedule
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -31,6 +45,10 @@ public class Home extends Fragment {
         });
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to classes
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -40,6 +58,10 @@ public class Home extends Fragment {
         });
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to calender
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -49,6 +71,10 @@ public class Home extends Fragment {
         });
         c3.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to clubs
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -58,6 +84,10 @@ public class Home extends Fragment {
         });
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to graduation
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -67,6 +97,10 @@ public class Home extends Fragment {
         });
         c5.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * Method which links the button to numbers
+             * @param v the view to be linked to
+             */
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
