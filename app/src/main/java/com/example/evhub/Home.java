@@ -14,16 +14,17 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, null);
-        CardView c = (CardView) v.findViewById(R.id.schedule);
-        CardView c1 = (CardView) v.findViewById(R.id.classes);
-        CardView c2 = (CardView) v.findViewById(R.id.Calender);
-        CardView c3 = (CardView) v.findViewById(R.id.clubs);
-        CardView c4 = (CardView) v.findViewById(R.id.graduation);
-        CardView c5 = (CardView) v.findViewById(R.id.numbers);
+        CardView c = v.findViewById(R.id.schedule);
+        CardView c1 = v.findViewById(R.id.classes);
+        CardView c2 = v.findViewById(R.id.Calender);
+        CardView c3 = v.findViewById(R.id.clubs);
+        CardView c4 = v.findViewById(R.id.graduation);
+        CardView c5 = v.findViewById(R.id.numbers);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Schedule());
                 fr.commit();
             }
@@ -32,6 +33,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Classes());
                 fr.commit();
             }
@@ -40,6 +42,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Calender());
                 fr.commit();
             }
@@ -48,6 +51,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Clubs());
                 fr.commit();
             }
@@ -56,6 +60,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Graduation());
                 fr.commit();
             }
@@ -64,6 +69,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 fr.replace(R.id.fragment_container, new Numbers());
                 fr.commit();
             }
