@@ -8,8 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import java.util.*
 
 public class Social extends Fragment {
+    ArrayList<String> responseArray = new ArrayList<String>();
+    private int  count;
+    public Social(){
+        count =0;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -21,10 +28,18 @@ public class Social extends Fragment {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new Form());
                 fr.commit();
+                count++;
             }
         });
         b.setX(0);
         b.setY(200);
         return v;
     }
+    public void dataCollect(String x){
+        responseArray.add(x);
+    }
+    public int totalResponses(){
+
+    }
+
 }
