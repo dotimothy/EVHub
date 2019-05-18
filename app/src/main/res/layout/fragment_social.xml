@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,20 +9,20 @@
         android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="80dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/ripple"
         android:elevation="50dp"
         android:onClick="form"
         android:text="@string/google_form"
         android:textColor="#ffffff"
         android:textSize="15sp"
-    />
+        />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal=""
-        android:text="TextView" />
+    <WebView
+        android:id="@+id/responses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button"
+        android:layout_marginTop="16dp"/>
 
-</FrameLayout>
+</RelativeLayout>
