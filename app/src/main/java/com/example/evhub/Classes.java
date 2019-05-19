@@ -45,7 +45,6 @@ public class Classes extends Fragment {
     private void webViewGoBack(){
         browser.goBack();
     }
-    @Override
 
     /**
      * Method which creates the view by linking the classes xml file
@@ -54,6 +53,7 @@ public class Classes extends Fragment {
      * @oaram savedInstanceState the Bundle which groups the fragments together
      * @return v the classes view
      */
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_classes, null);
         browser = (WebView) v.findViewById(R.id.classView);

@@ -118,6 +118,9 @@ public class Social extends Fragment {
         });
         b.setX(0);
         b.setY(200);
+        for (int i = 0; i < responses.size(); i++) {
+            System.out.println((responses.get(i)));
+        }
         return v;
     }
 
