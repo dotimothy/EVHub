@@ -32,10 +32,10 @@ Introduced with the splash screen of the app, you are given the choice to access
 # Social
 The social tab is a work in progress tab where in the future, there will be social media incorporated into the app and for other EVHub users to connect.
 
-#Schoolloop
+# Schoolloop
 The schoolloop tab takes you to a WebView where it shows the mobile WebView for schoolloop and where users can login to view their grades.
 
-#Notifications
+# Notifications
 The notifications tab will show you the notifications in the app when things change or when social gets implemented.
 
 We hope you enjoy the app cougars!!!
