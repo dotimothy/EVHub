@@ -50,7 +50,7 @@ public class Classes extends Fragment {
      * Method which creates the view by linking the classes xml file
      * @param inflater the LayoutInflater which inflates the view to the app
      * @param container the ViewGroup which displays the current fragment
-     * @oaram savedInstanceState the Bundle which groups the fragments together
+     * @param savedInstanceState the Bundle which groups the fragments together
      * @return v the classes view
      */
     @Override

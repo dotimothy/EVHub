@@ -50,7 +50,7 @@ public class Graduation extends Fragment {
      * Method which creates the view for graduation
      * @param inflater the LayoutInflater which inflates the view to the app
      * @param container the ViewGroup which displays the current fragment
-     * @oaram savedInstanceState the Bundle which groips the fragments together
+     * @param savedInstanceState the Bundle which groips the fragments together
      * @return the view of the graduation fragment
      */
     @Override

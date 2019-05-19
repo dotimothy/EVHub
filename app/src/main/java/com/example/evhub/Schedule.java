@@ -16,7 +16,7 @@ public class Schedule extends Fragment {
      * Method in order to create the notifications fragment
      * @param inflater the LayoutInflater which inflates the view to the app
      * @param container the ViewGroup which displays the current fragment
-     * @oaram savedInstanceState the Bundle which groups the fragments together
+     * @param savedInstanceState the Bundle which groups the fragments together
      */
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_schedule, null);
