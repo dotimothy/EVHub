@@ -128,12 +128,12 @@ public class Social extends Fragment {
      * Method used to log the amount of times the user clicks the google form button with an ArrayList response
      * For developers only
      */
-        public void addResponse() {
-            responseCounter++;
-            if(responseCounter == 1) {
-                responses.add("The google form has been clicked " + responseCounter + " time");
-            } else {
-                responses.add("The google form has been clicked " + responseCounter + " times ");
-            }
+    public void addResponse() {
+        responseCounter++;
+        if(responseCounter == 1) {
+            responses.add("The google form has been clicked " + responseCounter + " time");
+        } else {
+            responses.add("The google form has been clicked " + responseCounter + " times ");
         }
+    }
 }

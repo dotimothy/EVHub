@@ -45,14 +45,14 @@ public class Schoolloop extends Fragment {
     private void webViewGoBack(){
         browser.goBack();
     }
-    @Override
 
     /**
      * Method in order to create the schoolloop fragment
      * @param inflater the LayoutInflater which inflates the view to the app
      * @param container the ViewGroup which displays the current fragment
-     * @oaram savedInstanceState the Bundle which groups the fragments together
+     * @param savedInstanceState the Bundle which groups the fragments together
      */
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_schoolloop, null);
         browser = (WebView) v.findViewById(R.id.webView);

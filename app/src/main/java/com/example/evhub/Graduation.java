@@ -1,6 +1,5 @@
 package com.example.evhub;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -47,8 +46,6 @@ public class Graduation extends Fragment {
         browser.goBack();
     }
 
-    @Override
-
     /**
      * Method which creates the view for graduation
      * @param inflater the LayoutInflater which inflates the view to the app
@@ -56,6 +53,7 @@ public class Graduation extends Fragment {
      * @oaram savedInstanceState the Bundle which groips the fragments together
      * @return the view of the graduation fragment
      */
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_graduation, null);
         browser = (WebView) v.findViewById(R.id.grad);
