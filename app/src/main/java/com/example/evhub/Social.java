@@ -18,6 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import java.util.ArrayList;
 
 /**
  * Class to make the social fragment for the app
@@ -25,6 +26,8 @@ import android.widget.Button;
 public class Social extends Fragment {
     private WebView browser;
     private View v;
+    private ArrayList<String> responses = new ArrayList<String>();
+    private int responseCounter = 0;
     private Handler handler = new Handler() {
         @Override
         /**
@@ -109,6 +112,7 @@ public class Social extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new Form());
+                addResponse();
                 fr.commit();
             }
         });
@@ -116,4 +120,17 @@ public class Social extends Fragment {
         b.setY(200);
         return v;
     }
+
+    /**
+     * Method used to log the amount of times the user clicks the google form button with an ArrayList response
+     * For developers only
+     */
+        public void addResponse() {
+            responseCounter++;
+            if(responseCounter == 1) {
+                responses.add("The google form has been clicked " + responseCounter + " time");
+            } else {
+                responses.add("The google form has been clicked " + responseCounter + " times ");
+            }
+        }
 }
