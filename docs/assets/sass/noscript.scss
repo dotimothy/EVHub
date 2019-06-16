@@ -6,28 +6,27 @@
 @import 'libs/html-grid';
 
 /*
-	Landed by HTML5 UP
+	Fractal by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Loader */
+/* Header */
 
-	body.landing {
+	#header {
+		body.is-preload & {
+			.content {
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
 
-		&.is-preload {
+			.image {
+				@include vendor('transform', 'none');
+				opacity: 1;
 
-			// Spinner (active)
-
-				&:before {
-					display: none;
+				img {
+					opacity: 1;
 				}
-
-			// Overlay (active)
-
-				&:after {
-					display: none;
-				}
-
+			}
 		}
 	}
